@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Update - Please Wait</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="update-screen">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-title">System Update v2.1.337</div>
+                <div class="terminal-status">● RUNNING</div>
+            </div>
+            
+            <div class="log-container">
+                <div class="log-content" id="logContent"></div>
+            </div>
+            
+            <div class="progress-section">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="progress-text" id="progressText">0%</div>
+                </div>
+                
+                <div class="patience-line" id="patienceLine"></div>
+            </div>
+            
+            <div class="button-container">
+                <button class="cancel-button" id="cancelButton">Cancel Update</button>
+                <div class="cancel-message" id="cancelMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Completion popup -->
+    <div class="completion-popup hidden" id="completionPopup">
+        <div class="completion-content">
+            <div class="completion-title glitch" id="completionTitle">
+                Congratulations, you've unlocked… another wait.
+            </div>
+            <div class="completion-subtitle" id="completionSubtitle">
+                Launching soon.
+            </div>
+            <div class="completion-note" id="completionNote">
+                Estimated time: never. Just kidding. Soon.
+            </div>
+        </div>
+    </div>
+
+    <!-- Glitch overlay for screen effects -->
+    <div class="glitch-overlay"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
